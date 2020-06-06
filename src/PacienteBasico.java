@@ -5,6 +5,7 @@ public class PacienteBasico extends Paciente{
         this.name = nome;
         this.covid = cov_19;
         this.tipoPlano = "Básico";
+        super.defineEnfermaria();
     }
     
 }
