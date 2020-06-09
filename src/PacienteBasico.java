@@ -8,4 +8,10 @@ public class PacienteBasico extends Paciente{
         super.defineEnfermaria();
     }
     
+    public PacienteBasico(String nome){
+        this.name = nome;
+        this.covid = false;
+        this.tipoPlano = "Básico";
+        super.defineEnfermaria();
+    }
 }
