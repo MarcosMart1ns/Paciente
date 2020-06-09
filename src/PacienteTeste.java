@@ -8,11 +8,11 @@ public class PacienteTeste {
 
 		listadePacientes.add(new PacienteBasico("João", false));
 		listadePacientes.add(new PacienteBasico("Mario", true));
-		
 		listadePacientes.add(new PacienteExecutivo("Maria", true));
 		listadePacientes.add(new PacienteExecutivo("Pedro", false));
 		
 		System.out.println("Pacientes: ");
+		
 		for(Paciente pac : listadePacientes){
 
 			System.out.println("\nNome: "+pac.name);

@@ -9,7 +9,7 @@ public class PacienteExecutivo extends Paciente {
     }
 
 //Polimorfismo e reescrita, pois o mesmo método existe na superclasse, porém retorna valores diferentes e aqui ele é reescrito retornando outros valores.
-    public void defineEnfermaria(){
+    protected void defineEnfermaria(){
         this.enfermaria = "Individual";
     }
 }
