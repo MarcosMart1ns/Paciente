@@ -19,9 +19,9 @@ public class PacienteTeste {
 		for(Paciente pac : listadePacientes){
 
 			System.out.println("\nNome: "+pac.name);
-			System.out.println("Covid: " + (pac.temCovid() ? "Positivo" : "Negativo"));
 			System.out.println("Tipo de Plano: "+ pac.tipoPlano);
-			System.out.println("Tipo de enfermaria "+ pac.enfermaria);
+			System.out.println("Tipo de enfermaria: "+ pac.enfermaria);
+			System.out.println("Covid: " + (pac.temCovid() ? "Positivo" : "Negativo"));
 		}
 
 	}
