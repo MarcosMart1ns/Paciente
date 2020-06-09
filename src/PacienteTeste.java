@@ -1,33 +1,26 @@
+import java.util.ArrayList;
+
 public class PacienteTeste {
 	
 	public static void main(String[] args) {
 		//Teste
+		ArrayList<Paciente> listadePacientes = new ArrayList<Paciente>();
 
-		PacienteBasico p1 = new PacienteBasico("João", false);
-		PacienteBasico p2 = new PacienteBasico("Mario", true);
+		listadePacientes.add(new PacienteBasico("João", false));
+		listadePacientes.add(new PacienteBasico("Mario", true));
 		
-		PacienteExecutivo e1 = new PacienteExecutivo("Maria", true);
-		PacienteExecutivo e2 = new PacienteExecutivo("Pedro", false);
+		listadePacientes.add(new PacienteExecutivo("Maria", true));
+		listadePacientes.add(new PacienteExecutivo("Pedro", false));
 		
-		System.out.println(p1.name);
-		System.out.println(p1.temCovid());
-		System.out.println(p1.tipoPlano);
-		System.out.println(p1.enfermaria);
+		System.out.println("Pacientes: ");
+		for(Paciente pac : listadePacientes){
 
-		System.out.println(p2.name);
-		System.out.println(p2.temCovid());
-		System.out.println(p2.tipoPlano);
-		System.out.println(p2.enfermaria);
+			System.out.println("\nNome: "+pac.name);
+			System.out.println("Covid: " + (pac.temCovid() ? "Positivo" : "Negativo"));
+			System.out.println("Tipo de Plano: "+ pac.tipoPlano);
+			System.out.println("Tipo de enfermaria "+ pac.enfermaria);
+		}
 
-		System.out.println(e1.name);
-		System.out.println(e1.temCovid());
-		System.out.println(e1.tipoPlano);
-		System.out.println(e1.enfermaria);
-
-		System.out.println(e2.name);
-		System.out.println(e2.temCovid());
-		System.out.println(e2.tipoPlano);
-		System.out.println(e2.enfermaria);
 	}
 	
 }
